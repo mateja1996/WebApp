@@ -1,0 +1,172 @@
+.contact {
+    width: 1660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f0f0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    button {
+        span {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
+    & h2 {
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 58px;
+    }
+    & form {
+        & :nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            margin: 5px 10px;
+            & div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        & :nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            margin: 5px 10px;
+            & div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        & :nth-child(3) {
+            margin: 20px 20px;
+        }
+        & :nth-child(4) {
+            margin: 0 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            & p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #575756;
+            }
+        }
+
+        & label {
+            font-style: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+        }
+    }
+    &__inputs {
+        width: 580px;
+        height: 50px;
+        left: 0px;
+        top: 25px;
+        background: #ffffff;
+        border: 1px solid #575756;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        color: #575756;
+        text-indent: 20px;
+    }
+    &__message {
+        width: 1200px;
+        height: 150px;
+        left: 0px;
+        top: 25px;
+        background: #ffffff;
+        border: 1px solid #575756;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        color: #575756;
+        text-indent: 5px;
+        resize: none;
+    }
+}
+
+@media only screen and (max-width: 1660px) {
+    .contact {
+        margin: auto;
+        width: 768px;
+        height: 678px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        & h2 {
+            font-size: 46px;
+            line-height: 58px;
+        }
+
+        &__inputs {
+            width: 344px;
+        }
+        &__message {
+            width: 728px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        margin: auto;
+        width: 375px;
+        height: 855px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        button {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0 0 0 !important;
+        }
+        & form {
+            & :nth-child(1) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 10px 0 5px 0;
+            }
+            & :nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                margin: 5px 0 5px 0;
+            }
+            & :nth-child(3) {
+                margin:  15px 0 5px 0;
+            }
+            & :nth-child(4) {
+                margin: 20px 0;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            & label {
+                font-style: normal;
+                font-size: 16px;
+                line-height: 5px;
+                color: #000000;
+            }
+        }
+        & h2 {
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+        &__inputs {
+            width: 335px;
+            text-indent: 10px;
+        }
+        &__message {
+            width: 335px;
+            height: 150px;
+        }
+    }
+}

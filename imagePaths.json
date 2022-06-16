@@ -1,0 +1,20 @@
+[
+    {
+        "path": "./img/person1.svg",
+        "comment": "Sed dignissim placerat dolor id maxim. Nullam gravida bibendum ipsum, a consequat neque venenatis et.",
+        "person": "Orci varius natoque",
+        "personInfo": "Magnis dis parturient montes"
+    },
+    {
+        "path": "./img/person2.svg",
+        "comment": "Vivamus venenatis ipsum at risus placerat, sit amet dapibus diam aliquam posuere cubilia curae.",
+        "person": "Praesent Tempus",
+        "personInfo": "Nunc faucibus eget"
+    },
+    {
+        "path": "./img/person3.svg",
+        "comment": "Etiam mollis sit amet tellus ut accumsan. Donec sit amet lectus scelerisque, bibendum purus id, tristique felis.",
+        "person": "Cras malesuada",
+        "personInfo": "Sed pulvinar ac lorem"
+    }
+]

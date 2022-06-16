@@ -1,0 +1,21 @@
+{
+  "name": "zadatak",
+  "version": "1.0.0",
+  "description": "aaa",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "sass": "^1.52.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mateja",
+  "license": "ISC"
+}

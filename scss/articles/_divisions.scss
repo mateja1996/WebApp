@@ -1,0 +1,163 @@
+@mixin theme($theme: #E66559) {
+    background: $theme;
+    width: 10px;
+    height: 60px;
+    border-radius: 30px;
+  }
+
+.divisions {
+    display: flex;
+    flex-direction: row;
+    width: 1660px;
+    height: 902px;
+    justify-content: end;
+    background-color: #59A6C0;
+    &__rectangle-o {
+        @include theme;
+    }
+    &__rectangle-bc {
+        @include theme($theme: #000000);
+    }
+    &__rectangle-bl {
+        @include theme($theme: #59A6C0);
+    }
+    &__rectangle-c {
+        @include theme($theme: #3EA397);
+    }
+    &__rectangle-s {
+        @include theme($theme: #CFCDCC);
+    }
+    &__info {
+        margin: auto auto auto 230px ;
+    }
+    &__info > * {
+        margin: 30px 0 30px 0px;
+    }
+    & h2 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        color: #ffffff;
+    }
+    &__text {
+        width: 560px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+    }
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        background-color: #F1F0F0;
+    }
+    &__card-set {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 600px;
+        margin-top: 70px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: row;
+        width: 280px;
+        padding: 0 0 30px 40px;
+        & p {
+            font-weight: bolder;
+            font-size: 26px;
+            line-height: 32px;
+            padding: 0 0 10px 10px;
+        }
+        & :nth-child(2) {
+            & :nth-child(1) {
+                color: #E73137;
+            }
+            & :nth-child(2) {
+                color: #575756;
+            }
+        }
+    }
+}
+.rectangle--white {
+    background: #FFFFFF;
+}
+
+@media only screen and (max-width: 1660px) {
+    .divisions {
+        margin: auto;
+        flex-direction: column;
+        width: 768px;
+        height: auto;
+        &__info {
+            margin: auto auto auto 20px ;
+        }
+        &__info > * {
+            margin: 20px 0 20px 0px;
+        }
+        & h2 {
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 58px;
+        }
+        &__text {
+            width: 560px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &__card-set {
+            width: 600px;
+            margin-top: 40px;
+        }
+        &__card {
+            width: 280px;
+            padding: 0 0 20px 20px;
+            & p {
+                font-size: 22px;
+                line-height: 28px;
+                padding: 0 0 7px 10px;
+            }
+        }
+    }
+    .rectangle--white {
+        margin-top: 40px;
+    }
+   }
+
+   @media only screen and (max-width: 768px) {
+    .divisions {
+        margin: auto;
+        width: 375px;
+        height: auto;
+        & h2 {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 38px;
+        }
+        &__text {
+            width: 335px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        &__card-set {
+            width: 375px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        &__card {
+            width: 280px;
+            padding: 0 0 20px 20px;
+            & p {
+                font-size: 20px;
+                line-height: 25px;
+                padding: 0 0 7px 10px;
+            }
+        }
+    }
+    .rectangle--white {
+        margin-top: 40px;
+    }
+   }
+

@@ -1,0 +1,11 @@
+za pokretanje:
+npm install
+gulp style
+gulp watch
+
+href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"
+sam iskoristio samo za par ikonica
+
+slider je built from scratch
+u imagePaths.json se nalaze putanje ka slikama i tekstu za slajder
